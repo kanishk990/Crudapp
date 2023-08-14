@@ -41,10 +41,10 @@
                                 </li>
                             </ul>
                             <form action="/employee/delete/<%=list[i]._id%>?_method=DELETE" method="POST">
-                                <button class="btn btn-primary" type="submit">Delete</button>
+                                <button onclick="return confirm('Are you sure to delete?')" class="btn btn-primary" type="submit">Delete</button>
                             </form>
                             <form action="/employee/edit/<%=list[i]._id%>" method="GET">
-                                <button class="btn btn-primary" type="submit">Edit</button>
+                                <button onclick="return confirm('Edit sure ?')" class="btn btn-primary" type="submit">Edit</button>
                             </form>
                         </div>
                         <% } %>
