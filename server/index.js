@@ -12,7 +12,7 @@ mongoose.connect('mongodb://127.0.0.1:27017/myapp')
 .then(()=> console.log("connected to the database"))
 .catch(err => console.log("connection failed"))
 
-// app.use(cors)
+app.use(cors())
 app.use(session({
     secret: 'your-secret-key',
     resave: false,

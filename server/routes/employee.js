@@ -4,7 +4,8 @@ const validationSchema = require("../validation")
 const Employee = require("../models/employees")
 
 router.get("/create", (req,res)=> {
-    res.render('create')
+    console.log("recievied request")
+    res.send("hello from server")
 })
 
 router.post("/create", async (req,res) => {
